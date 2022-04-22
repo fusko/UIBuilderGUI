@@ -1,0 +1,78 @@
+.Button {
+    font-size: 42px;
+    -unity-text-align: middle-center;
+    height: 18%;
+    width: 80%;
+    -unity-font-style: bold-and-italic;
+    color: rgb(255, 198, 0);
+    border-top-left-radius: 29px;
+    border-bottom-left-radius: 29px;
+    border-top-right-radius: 29px;
+    border-bottom-right-radius: 29px;
+    margin-left: 5px;
+    margin-right: 5px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    -unity-font: resource('Fonts & Materials/Oswald-Bold');
+    min-width: 110px;
+    max-width: none;
+    max-height: none;
+    min-height: 50px;
+    border-left-color: rgba(247, 190, 90, 0.46);
+    border-right-color: rgba(247, 190, 90, 0.46);
+    border-top-color: rgba(247, 190, 90, 0.46);
+    border-bottom-color: rgba(247, 190, 90, 0.46);
+    border-left-width: 10px;
+    border-right-width: 10px;
+    border-top-width: 10px;
+    border-bottom-width: 10px;
+    background-image: url('project://database/Assets/UI/images/ui_btn.png?fileID=2800000&guid=5bc34c6b26751c947a52e5a6ae016898&type=3#ui_btn');
+    -unity-text-outline-width: 0;
+    text-shadow: 9px 0 0 rgb(87, 74, 32);
+}
+
+.Panel {
+    height: 80%;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(214, 201, 201, 0.31);
+    width: 20%;
+    display: flex;
+    overflow: visible;
+    min-width: 124px;
+    min-height: 200px;
+    border-top-left-radius: 13px;
+    border-bottom-left-radius: 13px;
+    border-top-right-radius: 13px;
+    border-bottom-right-radius: 13px;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    -unity-background-image-tint-color: rgb(0, 0, 0);
+    flex-grow: 0;
+    max-width: none;
+    max-height: none;
+}
+
+.PanelContainer {
+    height: auto;
+    justify-content: center;
+    align-items: flex-start;
+    background-color: rgba(65, 177, 207, 0.39);
+    width: auto;
+    display: flex;
+    overflow: visible;
+    min-width: auto;
+    min-height: auto;
+    border-top-left-radius: 13px;
+    border-bottom-left-radius: 13px;
+    border-top-right-radius: 13px;
+    border-bottom-right-radius: 13px;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    -unity-background-image-tint-color: rgb(113, 84, 84);
+    flex-grow: 1;
+}

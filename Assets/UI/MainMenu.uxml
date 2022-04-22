@@ -1,0 +1,11 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" editor-extension-mode="False">
+    <Style src="project://database/Assets/UI/MainMenu.uss?fileID=7433441132597879392&amp;guid=790aa55a755389e45875da2b69dd68b2&amp;type=3#MainMenu" />
+    <ui:VisualElement name="ContainerUI" class="PanelContainer" style="color: rgba(221, 26, 26, 0.7); background-color: rgba(65, 177, 207, 0);">
+        <ui:VisualElement name="ContainerMenu" class="Panel">
+            <ui:Button text="Start Game" display-tooltip-when-elided="true" name="Button_Start" class="Button" style="-unity-font: resource(&apos;Fonts &amp; Materials/Anton&apos;);" />
+            <ui:Button text="Options" display-tooltip-when-elided="true" name="Button_Options" class="Button" />
+            <ui:Button text="About" display-tooltip-when-elided="true" name="Button_About" class="Button" />
+            <ui:Button text="Exit" display-tooltip-when-elided="true" name="Button_Exit" class="Button" />
+        </ui:VisualElement>
+    </ui:VisualElement>
+</ui:UXML>
