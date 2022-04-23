@@ -1,11 +1,28 @@
 <ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" editor-extension-mode="False">
     <Style src="project://database/Assets/UI/MainMenu.uss?fileID=7433441132597879392&amp;guid=790aa55a755389e45875da2b69dd68b2&amp;type=3#MainMenu" />
-    <ui:VisualElement name="ContainerUI" class="PanelContainer" style="color: rgba(221, 26, 26, 0.7); background-color: rgba(65, 177, 207, 0);">
-        <ui:VisualElement name="ContainerMenu" class="Panel">
+    <ui:VisualElement name="ContainerUI" class="PanelContainerMainMenu" style="background-color: rgba(65, 177, 207, 0); display: none;">
+        <ui:VisualElement name="ContainerMenu" class="Panel" style="display: flex;">
             <ui:Button text="Start Game" display-tooltip-when-elided="true" name="Button_Start" class="Button" style="-unity-font: resource(&apos;Fonts &amp; Materials/Anton&apos;);" />
             <ui:Button text="Options" display-tooltip-when-elided="true" name="Button_Options" class="Button" />
             <ui:Button text="About" display-tooltip-when-elided="true" name="Button_About" class="Button" />
             <ui:Button text="Exit" display-tooltip-when-elided="true" name="Button_Exit" class="Button" />
+        </ui:VisualElement>
+    </ui:VisualElement>
+    <ui:VisualElement name="ContainerSelectCharacter" class="PanelContainerSelectCharacter" style="background-color: rgba(65, 177, 207, 0); display: flex;">
+        <ui:VisualElement name="SelectCharacter" class="PanelCharacter">
+            <ui:VisualElement name="LeftColumn" class="Column">
+                <ui:IMGUIContainer tabindex="0" style="height: 50%; background-color: rgb(116, 122, 226); width: 90%;" />
+                <ui:TextField picking-mode="Ignore" label="Name" value="filler text" tabindex="1" style="flex-direction: row; align-items: center; justify-content: flex-end; width: 90%; flex-shrink: 1; -unity-text-align: middle-center; height: auto; font-size: 30px; -unity-font-style: bold; -unity-font-definition: url(&apos;project://database/Assets/Fonts/morris-roman-black/MorrisRomanAlternate-Black%20SDF.asset?fileID=11400000&amp;guid=24496ae7dae3989408d8c44447bcba04&amp;type=2#MorrisRomanAlternate-Black SDF&apos;);" />
+                <ui:VisualElement name="Buttons" tabindex="2" class="ButtonsContainer">
+                    <ui:Button text="Back" display-tooltip-when-elided="true" name="ButtonBack" class="ButtonChangeCharacter" />
+                    <ui:Button text="Select" display-tooltip-when-elided="true" name="ButtonSelect" class="ButtonChangeCharacter" style="width: 40%;" />
+                    <ui:Button text="Next" display-tooltip-when-elided="true" name="ButtonNext" class="ButtonChangeCharacter" />
+                </ui:VisualElement>
+            </ui:VisualElement>
+            <ui:VisualElement name="RightColumn" class="Column">
+                <ui:TextField picking-mode="Ignore" label="Inventory" value="filler text" text="filler text" multiline="true" style="justify-content: space-around; flex-direction: column; align-items: stretch; height: 30%; width: 90%; -unity-font: resource(&apos;&apos;); -unity-font-definition: url(&apos;project://database/Assets/Fonts/morris-roman-black/MorrisRomanAlternate-Black%20SDF.asset?fileID=11400000&amp;guid=24496ae7dae3989408d8c44447bcba04&amp;type=2#MorrisRomanAlternate-Black SDF&apos;); font-size: 25px;" />
+                <ui:TextField picking-mode="Ignore" label="Background" value="filler text" text="filler text" multiline="true" style="justify-content: space-around; flex-direction: column; align-items: stretch; height: 57%; width: 90%; -unity-font: resource(&apos;&apos;); -unity-font-definition: url(&apos;project://database/Assets/Fonts/morris-roman-black/MorrisRomanAlternate-Black%20SDF.asset?fileID=11400000&amp;guid=24496ae7dae3989408d8c44447bcba04&amp;type=2#MorrisRomanAlternate-Black SDF&apos;); font-size: 25px;" />
+            </ui:VisualElement>
         </ui:VisualElement>
     </ui:VisualElement>
 </ui:UXML>
